@@ -1,0 +1,53 @@
+{
+  "name": "express-escher",
+  "version": "0.0.1",
+  "description": "Express middleware to validate requests signed by Escher",
+  "license": "MIT",
+  "repository": "wolfika/express-escher",
+  "author": {
+    "name": "Máté Farkas",
+    "email": "info@wolfika.eu",
+    "url": "github.com/wolfika"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "express",
+    "middleware",
+    "authorization",
+    "authentication",
+    "signature",
+    "validation",
+    "request",
+    "security",
+    "https",
+    "hmac",
+    "integrity"
+  ],
+  "dependencies": {
+    "escher-auth": "^0.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "coveralls": "^2.11.12",
+    "nyc": "^7.1.0",
+    "sinon": "^1.17.7",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
