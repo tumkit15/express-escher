@@ -88,11 +88,18 @@ A slash separated service constant and hierarchical ID, containing the serviceâ€
 
 ##### keyDB
 
-Type: `function`<br>
+Type: `function`
 
 A function, which takes a `clientKey` as an argument, and returns a client
 secret, if found. Ideally, this can be hooked up to a database, or just a
 simple collection of client keys/secrets.
+
+##### Escher
+
+Type: 'function'<br>
+Default: `require('escher-auth')`
+
+Swappable Escher implementation.
 
 
 ## License
