@@ -2,14 +2,13 @@
 
 module.exports = rawOpts => {
 	const defaultOpts = {
-		Escher: require('escher-auth')
+		Escher: require('escher-auth'),
+		credentialScope: ''
 	};
 
 	const opts = Object.assign({}, defaultOpts, rawOpts);
 
-	opts._instance = new opts.Escher({
-		credentialScope: opts.credentialScope || ''
-	});
+	opts._instance = new opts.Escher({credentialScope: opts.credentialScope});
 
 	return (req, res, next) => {
 		try {
