@@ -96,7 +96,7 @@ simple collection of client keys/secrets.
 
 ##### Escher
 
-Type: 'function'<br>
+Type: `function`<br>
 Default: `require('escher-auth')`
 
 Swappable Escher implementation.
